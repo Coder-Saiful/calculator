@@ -3,22 +3,21 @@
     padding: 0;
     outline: 0;
 }
-body {
-    background: #CEFBFE;
-}
+
 .calculatorContainer {
     display: flex;
     justify-content: center;
-    /* align-items: center; */
-    height: 100vh;
+    background: linear-gradient(45deg, #2893EC, #E12268);
+    height: 100pc;
 }
 
 table {
-    width: 324px;
+    width: 336px;
     height: 523px;
     background: #384351;
     border-radius: 10px;
 }
+
 tr td input {
     width: 60px;
     height: 60px;
@@ -28,7 +27,14 @@ tr td input {
     color: white;
     box-shadow: 1px 1px 0px 0px #2f2f2f, -1px -1px 0px 0px #5b5b5b;
     cursor: pointer;
+    border-radius: 50%;
 }
+
+tr td input:hover {
+    background-color: #5D6DC3;
+    box-shadow: 1px 1px 0px 0px #5D6DC3, -1px -1px 0px 0px #5D6DC3;
+}
+
 
 input#display {
     width: 100%;
@@ -38,17 +44,20 @@ input#display {
     text-align: right;
     padding: 0 12px;
     box-sizing: border-box;
+    background: #000;
 }
 
 caption {
     font-size: 24px;
     margin-bottom: 10px;
+    color: white;
+    margin-top: 14px;
 }
 
 td {
     display: inline-block;
     width: 60px;
-    height: auto;
+    height: 60px;
     margin: 10px;
 }
 
@@ -57,5 +66,22 @@ tr#displayRow td {
     margin-bottom: 10px;
 }
 
+.clears,
+.deleteOne,
+.clears:hover,
+.deleteOne:hover {
+    background-color: #F07A67;
+    box-shadow: 1px 1px 0px 0px #F07A67, -1px -1px 0px 0px #F07A67;
+}
 
+.answer,
+.answer:hover {
+    background-color: #20B2AA;
+    box-shadow: 1px 1px 0px 0px #20B2AA, -1px -1px 0px 0px #20B2AA;
+}
 
+.actionBtn,
+.actionBtn:hover {
+    background-color: #D72980;
+    box-shadow: 1px 1px 0px 0px #D72980, -1px -1px 0px 0px #D72980;
+}
