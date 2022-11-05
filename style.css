@@ -12,16 +12,16 @@
 }
 
 table {
-    width: 336px;
-    height: 523px;
-    background: #384351;
+    width: 300px;
+    height: 404px;
+    background: #384339;
     border-radius: 10px;
 }
 
 tr td input {
-    width: 60px;
-    height: 60px;
-    font-size: 26px;
+    width: 48px;
+    height: 48px;
+    font-size: 15px;
     border: none;
     background: transparent;
     color: white;
@@ -37,14 +37,14 @@ tr td input:hover {
 
 
 input#display {
-    width: 100%;
     border-radius: 0;
     cursor: default;
-    height: 71px;
+    height: 59px;
     text-align: right;
     padding: 0 12px;
     box-sizing: border-box;
     background: #000;
+    width: 300px;
 }
 
 caption {
@@ -56,9 +56,9 @@ caption {
 
 td {
     display: inline-block;
-    width: 60px;
-    height: 60px;
-    margin: 10px;
+    width: 48px;
+    height: 48px;
+    margin: 0 10px;
 }
 
 tr#displayRow td {
@@ -84,4 +84,8 @@ tr#displayRow td {
 .actionBtn:hover {
     background-color: #D72980;
     box-shadow: 1px 1px 0px 0px #D72980, -1px -1px 0px 0px #D72980;
+}
+tr {
+    display: inline-block;
+    margin-bottom: 17px;
 }
